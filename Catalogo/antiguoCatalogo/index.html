@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5ba4a21c24.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="cart-msg disable">
+            <h2>Este Producto ya está en el Carrito.</h2>
+        </div>
+        <div class="off-screen-menu">
+            <ul class="main-links">
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#" class="show-other">Our Products</a></li>
+                <li><a href="#" class="link-contact">Contact us</a></li>
+
+                <div class="foot-menu">
+                    <span class="insta">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                    <span class="fb">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </span>
+                    <span class="wsp">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
+                    </span>
+                    <span class="ttk">
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </span>
+                </div>
+            </ul>
+            <ul class="other-links">
+                <li><a href="#featured" class="scroll-link">Featured Products</a></li>
+                <li><a href="#all" class="scroll-link">All Products</a></li>
+                <li><a href="#blue" class="scroll-link">Blue Products</a></li>
+                <li><a href="#" class="hide-other"><ion-icon name="chevron-back-circle-outline"></ion-icon> Back</a></li>
+            </ul>
+        </div>
+        <div class="off-screen-cart">
+            <h1>Shopping Cart</h1>
+            <h2 class="empty-text">Your Cart is Empty.</h2>
+            <div id="cart-container"></div>
+            <div class="cart-total">
+                <span>Total: $<span id="cart-total">0.00</span> USD</span>
+            </div>
+            <a href="http://google.com" class="wsp checkout">Checkout <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div id="home"></div>
+        <nav class="nav">
+            <a href="#" class="logo">Logo</a>
+            <ul class="menu">
+                <li><a href="#" class="link">home</a></li>
+                <li><a href="#" class="link">about</a></li>
+                <li><a href="#" class="link">contact</a></li>
+            </ul>
+            <div class="apart">
+                <span class="cart-btn">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span class="counter-cart">0</span>
+                </span>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <!--<div class="cart-displayer">
+                <span class="cart-btn desing-2">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span class="xmark">
+                    <ion-icon name="close-outline"></ion-icon>
+                </span>
+                <span class="counter-cart">0</span>
+            </div>
+            <a href="#" class="logo">Logo</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>-->
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="main-img-container">
+            <img src="https://th.bing.com/th/id/R.be9bf1724ee4fb9ad932725a4243b8e9?rik=jUq%2bBsNDmcuV0w&pid=ImgRaw&r=0" alt="" class="img">
+        </div>
+        <div class="main-text">
+            <h1 class="title">Company name</h1>
+            <h3>Company Slogan</h3>
+        </div>
+    </section>
+    <div class="title-products" id="featured">
+        <h1 class="title2">Featured Products</h1>
+    </div>
+    <section class="products" id="section1">
+        <div class="sort">
+            <div class="drop-parent">
+                <h3>Sort</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="dropdown">
+                <li><h4 class="sort-asc border">Price, Lower to High</h4></li>
+                <li><h4 class="sort-desc">Price, Higher to Low</h4></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="card-container">
+                <div class="card" data-name="First Product" data-price="$100.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png" data-stock-all="5" data-stock-size1="3" data-stock-size2="2" data-size="S,M">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>First Product</h1>
+                        <h3>$100.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Second Product" data-price="$90.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/5/57/Blancos.png" data-stock-all="8" data-stock-size1="1" data-stock-size2="2" data-stock-size3="2" data-stock-size5="1" data-size="S,M,L,XXL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Blancos.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Second Product</h1>
+                        <h3>$90.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Third Product" data-price="$110.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Color_icon_purple.svg/1024px-Color_icon_purple.svg.png" data-stock-all="4" data-stock-size4="2" data-stock-size5="2" data-size="XL,XXL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Color_icon_purple.svg/1024px-Color_icon_purple.svg.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Third Product</h1>
+                        <h3>$110.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Fourth Product" data-price="$160.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" data-stock-all="3" data-stock-size2="2" data-stock-size4="1" data-size="M,XL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Fourth Product</h1>
+                        <h3>$160.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Fifth Product" data-price="$100.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/d/db/Tipos_de_verde.png" data-stock-all="1" data-stock-size3="1" data-size="L">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Tipos_de_verde.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Fifth Product</h1>
+                        <h3>$100.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Sixth Product" data-price="$200.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/8/81/Colores_negros.png" data-stock-all="3" data-stock-size1="1" data-stock-size3="2" data-size="S,L">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Colores_negros.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Sixth Product</h1>
+                        <h3>$200.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="First Product" data-price="$100.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png" data-stock-all="5" data-stock-size1="3" data-stock-size2="2" data-size="S,M">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>First Product</h1>
+                        <h3>$100.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Fourth Product" data-price="$160.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" data-stock-all="3" data-stock-size2="2" data-stock-size4="1" data-size="M,XL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Fourth Product</h1>
+                        <h3>$160.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="title-products" id="all">
+        <h1 class="title2">All Products</h1>
+    </div>
+    <!--<section class="products" id="section2">
+        <div class="sort">
+            <div class="drop-parent">
+                <h3>Sort</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="dropdown">
+                <li><h4 class="sort-asc border">Price, Lower to High</h4></li>
+                <li><h4 class="sort-desc">Price, Higher to Low</h4></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="card-container">
+                <div class="card" data-name="First Product" data-price="$100.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png"  data-size="S,M">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>First Product</h1>
+                        <h3>$100.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Second Product" data-price="$90.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/5/57/Blancos.png" data-stock="3" data-size="S,M,L,XXL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Blancos.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Second Product</h1>
+                        <h3>$90.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Third Product" data-price="$110.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Color_icon_purple.svg/1024px-Color_icon_purple.svg.png" data-stock="3" data-size="XL,XL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Color_icon_purple.svg/1024px-Color_icon_purple.svg.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Third Product</h1>
+                        <h3>$110.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Fourth Product" data-price="$160.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" data-stock="5" data-size="M,XL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Fourth Product</h1>
+                        <h3>$160.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Fifth Product" data-price="$100.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/d/db/Tipos_de_verde.png" data-stock="1" data-size="L">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Tipos_de_verde.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Fifth Product</h1>
+                        <h3>$100.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Sixth Product" data-price="$200.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/8/81/Colores_negros.png" data-stock="2" data-size="S,L">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Colores_negros.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Sixth Product</h1>
+                        <h3>$200.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <div class="title-products" id="blue">
+        <h1 class="title2">Blue Products</h1>
+    </div>
+    <section class="products last" id="section3">
+        <div class="cards">
+            <div class="card-container">
+                <div class="card" data-name="First Product" data-price="$100.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png" data-stock-all="5" data-stock-size1="3" data-stock-size2="2" data-size="S,M">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Tipos_de_azules.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>First Product</h1>
+                        <h3>$100.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card" data-name="Fourth Product" data-price="$160.00 USD" data-image="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" data-stock-all="3" data-stock-size2="2" data-stock-size4="1" data-size="M,XL">
+                    <div class="img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Grises.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Fourth Product</h1>
+                        <h3>$160.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="panel disable">
+            <span class="close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="img-container">
+                <img src="" alt="">
+            </div>
+            <div class="product-info">
+                <h1></h1>
+                <h3></h3>
+                <div class="size-info">
+                    <h4>Size</h4>
+                <div class="size-btns">
+                    <button class="size-btn" data-size="S">S</button>
+                    <button class="size-btn" data-size="M">M</button>
+                    <button class="size-btn" data-size="L">L</button>
+                    <button class="size-btn" data-size="XL">XL</button>
+                    <button class="size-btn" data-size="XXL">XXL</button>
+                </div>
+                </div>
+            </div>
+            <a class="add-cart">Add To Cart</a>
+            <a href="" class="wsp buy-now">Buy Now <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="overlay disable"></div>
+    </section>
+    <footer>
+        <span class="insta">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+        <span class="fb">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </span>
+        <span class="wsp">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
+        </span>
+        <span class="ttk">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
